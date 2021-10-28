@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cg_service_goods" />
         <module name="cg_common" />
+        <module name="cg_service_file" />
         <module name="cg_service_goods_api" />
         <module name="cg_common_db" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="cg_gateway" options="-parameters" />
       <module name="cg_service" options="-parameters" />
       <module name="cg_service_api" options="-parameters" />
+      <module name="cg_service_file" options="-parameters" />
       <module name="cg_service_goods" options="-parameters" />
       <module name="cg_service_goods_api" options="-parameters" />
       <module name="cg_web" options="-parameters" />

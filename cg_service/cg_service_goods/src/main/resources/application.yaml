@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: goods
+    name: goods-service
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -25,3 +25,7 @@ feign:
 logging:
   level:
     com.gqz: debug
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.gqz.goods.pojo

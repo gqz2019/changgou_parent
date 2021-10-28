@@ -4,6 +4,8 @@ import com.gqz.goods.pojo.Brand;
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.List;
+
 /**
  * <p></p>
  *
@@ -12,4 +14,5 @@ import tk.mybatis.mapper.common.Mapper;
  **/
 @Repository
 public interface BrandDao extends Mapper<Brand> {
+    List<Brand> findByMulti(Brand brand);
 }

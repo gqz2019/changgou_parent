@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gqz.goods.dao.BrandDao">
+    <select id="findByMulti" resultType="brand" parameterType="brand">
+        select * from tb_brand
+        <where>
+            <if test="id !=null and id !=''">
+                and id=#{id}
+            </if>
+            <if test="name !=null and name !=''">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="image !=null and image !=''">
+                and image like concat('%',#{image},'%')
+            </if>
+            <if test="letter !=null and letter !=''">
+                and letter like concat('%',#{letter},'%')
+            </if>
+            <if test="seq !=null and seq !=''">
+                and seq = #{seq}
+            </if>
+        </where>
+        order by seq is null, seq
+    </select>
+</mapper>

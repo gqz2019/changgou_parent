@@ -1,8 +1,8 @@
 package com.gqz.common.entity;
 
-/***
+/**
  *
- * @Author:www.itheima.com
+ * @author :www.itheima.com
  * @Description:itheima
  *
  ****/
