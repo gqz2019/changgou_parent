@@ -2,7 +2,6 @@ package com.gqz.file.controller;
 
 import com.gqz.file.pojo.FastDFSFile;
 import com.gqz.file.utils.FastDFSClient;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
