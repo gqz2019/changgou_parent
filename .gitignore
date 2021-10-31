@@ -3,5 +3,5 @@
 /cg_service/cg_service_goods/target/
 /cg_service_api/cg_service_goods_api/target/
 /.idea
-/**/target
+*.class
 *.iml

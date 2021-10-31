@@ -3,18 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>changgou_parent</artifactId>
+        <artifactId>cg_core</artifactId>
         <groupId>com.gqz</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cg_service</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>cg_service_goods</module>
-        <module>cg_service_file</module>
-    </modules>
+    <artifactId>cg_core_service</artifactId>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -23,15 +19,6 @@
         <dependency>
             <groupId>com.gqz</groupId>
             <artifactId>cg_common_db</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.gqz</groupId>
-            <artifactId>cg_core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

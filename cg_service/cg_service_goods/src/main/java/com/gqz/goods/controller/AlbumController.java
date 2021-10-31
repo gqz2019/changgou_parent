@@ -1,4 +1,4 @@
-package com.gqz.goods.advice;
+package com.gqz.goods.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.gqz.common.entity.Result;

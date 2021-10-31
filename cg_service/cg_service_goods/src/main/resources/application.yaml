@@ -10,6 +10,11 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/changgou
     username: root
     password: root
+    hikari:
+      username: root
+      password: root
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/changgou
+      driver-class-name: com.mysql.cj.jdbc.Driver
 
 eureka:
   client:
