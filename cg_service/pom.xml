@@ -31,7 +31,12 @@
         </dependency>
         <dependency>
             <groupId>com.gqz</groupId>
-            <artifactId>cg_core</artifactId>
+            <artifactId>cg_core_service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gqz</groupId>
+            <artifactId>cg_core_controller</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

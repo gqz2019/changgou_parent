@@ -92,7 +92,7 @@ public class BrandsServiceImpl implements BrandsService {
 
     }
 
-    /***
+    /**
      * 多条件搜索品牌方法
      * @param brand
      * @return
