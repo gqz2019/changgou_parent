@@ -43,12 +43,12 @@ public class StringUtils {
         //根据下划线分割
         String[] split = str.split("_");
         //循环组装
-        String result = split[0];
+        StringBuilder result = new StringBuilder(split[0]);
         if (split.length > 1) {
             for (int i = 1; i < split.length; i++) {
-                result += firstUpper(split[i]);
+                result.append(firstUpper(split[i]));
             }
         }
-        return result;
+        return result.toString();
     }
 }

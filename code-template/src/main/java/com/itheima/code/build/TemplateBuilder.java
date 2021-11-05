@@ -96,14 +96,16 @@ public class TemplateBuilder {
 
             //针对MySQL数据库进行相关生成操作
             if ("MySQL".equals(databaseType)) {
+
+                String database = conn.getCatalog();
                 //获取所有表结构
-                ResultSet tableResultSet = metaData.getTables(null, "%", "%", new String[]{"TABLE"});
+                ResultSet tableResultSet = metaData.getTables(database, "%", "%", new String[]{"TABLE"});
 
                 //获取数据库名字
-                String database = conn.getCatalog();
+
 
                 //Swagger信息集合
-                List<SwaggerModel> swaggerModels = new ArrayList<SwaggerModel>();       //Model
+                List<SwaggerModel> swaggerModels = new ArrayList<SwaggerModel>();    //Model
                 List<SwaggerPath> swaggerPathList = new ArrayList<SwaggerPath>();    //Method
 
                 //循环所有表信息

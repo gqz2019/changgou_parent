@@ -11,7 +11,6 @@
         <module>cg_common</module>
         <module>cg_common_db</module>
         <module>cg_core</module>
-        <module>cg_core_controller</module>
     </modules>
 
     <parent>
