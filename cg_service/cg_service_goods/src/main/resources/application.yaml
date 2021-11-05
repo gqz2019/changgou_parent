@@ -7,13 +7,13 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/changgou
+    url: jdbc:mysql://gqz2019.top:3306/changgou-goods
     username: root
     password: root
     hikari:
       username: root
       password: root
-      jdbc-url: jdbc:mysql://127.0.0.1:3306/changgou
+      jdbc-url: jdbc:mysql://gqz2019.top:3306/changgou-goods
       driver-class-name: com.mysql.cj.jdbc.Driver
 
 eureka:
