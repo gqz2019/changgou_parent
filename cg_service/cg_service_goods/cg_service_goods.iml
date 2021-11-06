@@ -30,7 +30,9 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="cg_service_goods" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>

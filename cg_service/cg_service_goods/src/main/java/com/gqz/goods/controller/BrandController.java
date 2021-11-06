@@ -137,4 +137,16 @@ public class BrandController {
             throw new Exception("多条件查询品牌失败");
         }
     }
+
+    /**
+     * 根据分类实现品牌列表查询
+     * @param categoryId
+     * @return result<list<brand>>
+     */
+    @GetMapping(value = "/category/{id}")
+    public Result<List<Brand>> findBrandByCategory(@PathVariable(value = "id")Integer categoryId){
+        //调用Service查询品牌数据
+        List<Brand> categoryList = brandService.findByCategory(categoryId);
+        return new Result<>(true, StatusCode.OK, "查询成功！", categoryList);
+    }
 }

@@ -24,4 +24,13 @@
         </where>
         order by seq is null, seq
     </select>
+    <select id="findByCategory" resultType="brand" parameterType="integer">
+        SELECT b.*
+        FROM tb_category c
+                 JOIN tb_category_brand cb
+                      ON c.id = cb.category_id
+                 JOIN tb_brand b
+                      ON b.id = cb.brand_id
+        WHERE c.id = #{id}
+    </select>
 </mapper>

@@ -10,4 +10,10 @@ import com.gqz.goods.pojo.Template;
  * @create 2021-10-31 20:37
  **/
 public interface TemplateService extends CoreService<Template> {
+    /**
+     * 根据分类ID查询模板信息
+     * @param id
+     * @return
+     */
+    Template findByCategoryId(Integer id);
 }

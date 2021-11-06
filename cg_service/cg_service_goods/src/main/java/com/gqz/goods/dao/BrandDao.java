@@ -15,4 +15,6 @@ import java.util.List;
 @Repository
 public interface BrandDao extends Mapper<Brand> {
     List<Brand> findByMulti(Brand brand);
+
+    List<Brand> findByCategory(Integer categoryId);
 }

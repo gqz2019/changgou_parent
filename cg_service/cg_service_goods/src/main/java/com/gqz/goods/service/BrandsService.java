@@ -3,7 +3,6 @@ package com.gqz.goods.service;
 import com.github.pagehelper.PageInfo;
 import com.gqz.goods.pojo.Brand;
 
-
 import java.util.List;
 
 /**
@@ -54,4 +53,11 @@ public interface BrandsService {
      * @return
      */
     PageInfo<Brand> findPage(Brand brand, int page, int size) throws Exception;
+
+    /**
+     * 根据分类ID查询品牌集合
+     * @param categoryid:分类ID
+     * @return list<brand>
+     */
+    List<Brand> findByCategory(Integer categoryid);
 }

@@ -83,4 +83,9 @@ public interface SpecFeign {
      */
     @GetMapping
     Result<List<Spec>> findAll();
+    /**
+     * 根据分类ID查询对应的规格列表
+     */
+    @GetMapping("category/{id}")
+    Result<List<Spec>> findSpecByCategory(@PathVariable("id") Integer id);
 }

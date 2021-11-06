@@ -93,6 +93,19 @@ public class BrandsServiceImpl implements BrandsService {
     }
 
     /**
+     * 根据分类ID查询品牌集合
+     *
+     * @param categoryid :分类ID
+     * @return list<brand>
+     */
+    @Override
+    public List<Brand> findByCategory(Integer categoryid) {
+        List<Brand> brands = brandDao.findByCategory(categoryid);
+
+        return brands;
+    }
+
+    /**
      * 多条件搜索品牌方法
      * @param brand
      * @return

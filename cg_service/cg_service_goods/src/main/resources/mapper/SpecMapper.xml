@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gqz.goods.dao.SpecMapper">
+
+    <select id="findByCategoryId" resultType="com.gqz.goods.pojo.Spec" parameterType="integer">
+        SELECT s.*
+        FROM tb_category c
+                 JOIN tb_spec s
+                      on c.template_id = s.template_id
+        WHERE c.id = #{id}
+    </select>
+</mapper>
